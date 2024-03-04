@@ -1,0 +1,27 @@
+ /*diseños del logo y el slogan*/
+ .logo{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0;    
+}
+.img-logo{
+    max-width: 100%;
+    height: auto;
+    background: transparent;
+}
+
+
+@keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .spinner {
+      animation: logo-spin infinite 5s linear;
+    }
+  }

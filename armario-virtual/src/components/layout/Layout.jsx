@@ -1,8 +1,11 @@
+import React, {lazy, Suspense, useEffect, useState} from 'react';
 import './Layout.css';
 import './funciones.js';
 import Header from '../Header/Header.jsx';
 import Main from '../Main/Main.jsx';
 import Footer from '../Footer/Footer.jsx';
+
+
 
 const Layout = ({children})=>{
 

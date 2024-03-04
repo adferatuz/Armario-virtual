@@ -1,0 +1,30 @@
+/* estilos barra de navegacion*/
+.navbar{
+    margin-top: 10px;
+
+}
+
+.navbar-list{
+    display: flex;
+    gap: 5rem;
+    list-style-type: none;
+    font-weight: bold;
+}
+.navbar-list:nth-child(1){
+    margin-right: 3em;
+}
+
+.list-item-navbar{
+    text-transform: uppercase;
+}
+
+.list-item-navbar:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.list-item-navbar:before{
+    content: '|';
+    margin-right: 20px;
+}
+

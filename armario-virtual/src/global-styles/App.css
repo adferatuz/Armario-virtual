@@ -1,20 +1,9 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0;
+  padding: 2em;
+  background: linear-gradient(#ffffff, #e7e6e6);
+  border: none;
+  border-radius: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
