@@ -11,3 +11,22 @@
     grid-row-gap: 4px;
     text-align: center;
 }
+
+.container-header {
+    grid-area: 1 / 1 / 2 / 6;
+}
+
+.container-section { 
+    grid-area: 2 / 2 / 5 / 5; 
+}
+
+.container-footer{ 
+    grid-area: 5 / 1 / 6 / 6; 
+}
+
+
+
+@media  screen and (max-width: 539px) and (min-width: 360px){
+    .container-section { grid-area: 2 / 1 / 5 / 6; }
+
+}

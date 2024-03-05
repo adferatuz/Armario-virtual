@@ -1,5 +1,5 @@
 .titulo-slogan{
-    font-size: 2.5em;
+    font-optical-sizing: auto;
     padding-top: 0;
     margin: 0;
     font-family: "Shrikhand", serif;
@@ -13,5 +13,5 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    margin: -15px 0 0 10px;
+    margin: -15px 0 0 0px;
 }

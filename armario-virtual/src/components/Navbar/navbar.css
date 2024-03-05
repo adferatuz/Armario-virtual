@@ -1,17 +1,24 @@
 /* estilos barra de navegacion*/
 .navbar{
     margin-top: 10px;
+    position: relative;
 
+}
+.navbar-dropdown{
+    display: none;
 }
 
 .navbar-list{
     display: flex;
-    gap: 5rem;
+    gap:5px;
     list-style-type: none;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
-.navbar-list:nth-child(1){
-    margin-right: 3em;
+
+.navbar-list.list-item-navbar:last-child{
+    margin: 0;
 }
 
 .list-item-navbar{
@@ -25,6 +32,96 @@
 
 .list-item-navbar:before{
     content: '|';
-    margin-right: 20px;
+    margin-right: 10px;
 }
+
+/*estilos del label burguer*/
+ .burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger--active > span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger--active > span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger--active > span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+ 
+
+@media screen and (max-width: 539px) {
+    .navbar-list { 
+      flex-direction: column;   
+      align-items: flex-start;
+    }
+    .burger {
+      display: block;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column nowrap;
+      gap: 1rem;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      transition: all 1s ease;
+      background-color: #fff;
+    }
+  
+    .nav--active {
+      pointer-events: auto;
+      height: 30vh;
+      transition: all 1s ease;
+    }
+}
+
+    
+
 
