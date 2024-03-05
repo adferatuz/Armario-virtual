@@ -1,10 +1,10 @@
 import './main.css';
 
-const Main = () => {
+const Main = ({children}) => {
     return(
         <>
             <section className='container-section'>
-                <h3>Este es el section</h3>
+                {children}
             </section>
         </>
     )

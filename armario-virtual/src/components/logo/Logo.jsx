@@ -1,5 +1,5 @@
 import './logo.css';
-import imgLogo from '../../../public/logo.png';
+import imgLogo from '/logo.png';
 
 const Logo = () => {
     return (
