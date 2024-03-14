@@ -23,6 +23,9 @@
 
 .list-item-navbar{
     text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 10px;
+    transition: 0.3s all;
 }
 
 .list-item-navbar:hover{
